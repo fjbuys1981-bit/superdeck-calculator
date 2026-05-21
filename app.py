@@ -72,6 +72,12 @@ ALL_SPECS = {
             4750: {"swl": 4000, "RA": 5.4, "RB": None, "RC": 2.2, "defl_wheel": 11, "defl_free": 44},
             5000: {"swl": 3200, "RA": 5.1, "RB": None, "RC": 2.3, "defl_wheel": 13, "defl_free": 45},
             5250: {"swl": 2500, "RA": 4.8, "RB": None, "RC": 2.3, "defl_wheel": 14, "defl_free": 45},
+        },
+        "Boltdown": {
+            4500: {"swl": 5000, "RA": 10.1, "RB": 6.9, "RC": -0.5, "defl_wheel": 5, "defl_free": 29},
+            4750: {"swl": 4000, "RA": 10.4, "RB": 7.5, "RC": -0.3, "defl_wheel": 6, "defl_free": 29},
+            5000: {"swl": 3200, "RA": 11.1, "RB": 8.4, "RC": -0.1, "defl_wheel": 7, "defl_free": 30},
+            5250: {"swl": 2500, "RA": 12.4, "RB": 9.7, "RC": 0.2, "defl_wheel": 9, "defl_free": 31},
         }
     },
     "SuperDeck 4.2": {
@@ -86,7 +92,103 @@ ALL_SPECS = {
             4750: {"swl": 4000, "RA": 5.9, "RB": None, "RC": 2.4, "defl_wheel": 12, "defl_free": 48},
             5000: {"swl": 3200, "RA": 5.6, "RB": None, "RC": 2.5, "defl_wheel": 14, "defl_free": 49},
             5250: {"swl": 2500, "RA": 5.3, "RB": None, "RC": 2.6, "defl_wheel": 15, "defl_free": 50},
+        },
+        "Boltdown": {
+            4500: {"swl": 5000, "RA": 10.8, "RB": 7.4, "RC": -0.5, "defl_wheel": 6, "defl_free": 31},
+            4750: {"swl": 4000, "RA": 11.2, "RB": 8.1, "RC": -0.3, "defl_wheel": 7, "defl_free": 32},
+            5000: {"swl": 3200, "RA": 12.1, "RB": 9.2, "RC": -0.1, "defl_wheel": 8, "defl_free": 33},
+            5250: {"swl": 2500, "RA": 13.7, "RB": 10.8, "RC": 2.5, "defl_wheel": 9, "defl_free": 35},
         }
+    },
+}
+
+
+# ==========================================================
+# PROP HEIGHT / CAPACITY DATABASE
+# ==========================================================
+
+PROP_SERIES = {
+    "1.8 m adjustable prop": {
+        "drawing": "IP12-0094-S1 Rev A",
+        "height_min": 1800,
+        "height_max": 2900,
+        "positions": [
+            {"position": 12, "height": 1800, "wll": 12.1},
+            {"position": 11, "height": 1900, "wll": 12.1},
+            {"position": 10, "height": 2000, "wll": 12.1},
+            {"position": 9, "height": 2100, "wll": 12.1},
+            {"position": 8, "height": 2200, "wll": 12.1},
+            {"position": 7, "height": 2300, "wll": 12.1},
+            {"position": 6, "height": 2400, "wll": 12.1},
+            {"position": 5, "height": 2500, "wll": 12.1},
+            {"position": 4, "height": 2600, "wll": 11.7},
+            {"position": 3, "height": 2700, "wll": 11.3},
+            {"position": 2, "height": 2800, "wll": 10.8},
+            {"position": 1, "height": 2900, "wll": 10.4},
+        ],
+    },
+    "2.3 m adjustable prop": {
+        "drawing": "IP12-0094-S2 Rev A",
+        "height_min": 2300,
+        "height_max": 3600,
+        "positions": [
+            {"position": 14, "height": 2300, "wll": 12.1},
+            {"position": 13, "height": 2400, "wll": 12.1},
+            {"position": 12, "height": 2500, "wll": 12.1},
+            {"position": 11, "height": 2600, "wll": 11.7},
+            {"position": 10, "height": 2700, "wll": 11.3},
+            {"position": 9, "height": 2800, "wll": 10.8},
+            {"position": 8, "height": 2900, "wll": 10.4},
+            {"position": 7, "height": 3000, "wll": 10.0},
+            {"position": 6, "height": 3100, "wll": 9.5},
+            {"position": 5, "height": 3200, "wll": 9.1},
+            {"position": 4, "height": 3300, "wll": 8.8},
+            {"position": 3, "height": 3400, "wll": 8.4},
+            {"position": 2, "height": 3500, "wll": 8.0},
+            {"position": 1, "height": 3600, "wll": 7.6},
+        ],
+    },
+    "3.0 m adjustable prop": {
+        "drawing": "IP12-0094-S3 Rev A",
+        "height_min": 3000,
+        "height_max": 4300,
+        "positions": [
+            {"position": 14, "height": 3000, "wll": 10.0},
+            {"position": 13, "height": 3100, "wll": 9.5},
+            {"position": 12, "height": 3200, "wll": 9.1},
+            {"position": 11, "height": 3300, "wll": 8.8},
+            {"position": 10, "height": 3400, "wll": 8.4},
+            {"position": 9, "height": 3500, "wll": 8.0},
+            {"position": 8, "height": 3600, "wll": 7.6},
+            {"position": 7, "height": 3700, "wll": 7.2},
+            {"position": 6, "height": 3800, "wll": 6.9},
+            {"position": 5, "height": 3900, "wll": 6.6},
+            {"position": 4, "height": 4000, "wll": 6.3},
+            {"position": 3, "height": 4100, "wll": 6.0},
+            {"position": 2, "height": 4200, "wll": 5.8},
+            {"position": 1, "height": 4300, "wll": 5.6},
+        ],
+    },
+    "5.3 m adjustable prop": {
+        "drawing": "IP19-0010 A S1",
+        "height_min": 4000,
+        "height_max": 5300,
+        "positions": [
+            {"position": 1, "height": 4000, "wll": 6.3},
+            {"position": 2, "height": 4100, "wll": 6.0},
+            {"position": 3, "height": 4200, "wll": 5.8},
+            {"position": 4, "height": 4300, "wll": 5.6},
+            {"position": 5, "height": 4400, "wll": 5.3},
+            {"position": 6, "height": 4500, "wll": 5.0},
+            {"position": 7, "height": 4600, "wll": 4.9},
+            {"position": 8, "height": 4700, "wll": 4.7},
+            {"position": 9, "height": 4800, "wll": 4.5},
+            {"position": 10, "height": 4900, "wll": 4.3},
+            {"position": 11, "height": 5000, "wll": 4.2},
+            {"position": 12, "height": 5100, "wll": 4.0},
+            {"position": 13, "height": 5200, "wll": 3.9},
+            {"position": 14, "height": 5300, "wll": 3.7},
+        ],
     },
 }
 
@@ -117,6 +219,97 @@ def format_mm(value):
 
 def format_percent(value):
     return "TBC" if value is None else f"{value:.1f}%"
+
+
+def get_positive_reaction_demand(spec):
+    reactions = [spec["RA"], spec["RB"], spec["RC"]]
+    positive_reactions = [value for value in reactions if value is not None and value > 0]
+    return max(positive_reactions) if positive_reactions else None
+
+
+def get_nearest_position(series, support_height):
+    valid_positions = series["positions"]
+    for position in valid_positions:
+        if position["height"] >= support_height:
+            return position
+    return valid_positions[-1]
+
+
+def build_prop_check(method, spec, support_height):
+    demand = get_positive_reaction_demand(spec)
+
+    if method == "Boltdown":
+        return {
+            "status": "N/A",
+            "status_color": PH_MUTED,
+            "message": "Boltdown configurations do not use the adjustable prop height check.",
+            "support_height": support_height,
+            "reaction_demand": demand,
+            "selected": None,
+            "compatible": [],
+        }
+
+    if demand is None:
+        return {
+            "status": "DATA REQUIRED",
+            "status_color": PH_MUTED,
+            "message": "Reaction data is required before prop capacity can be checked.",
+            "support_height": support_height,
+            "reaction_demand": None,
+            "selected": None,
+            "compatible": [],
+        }
+
+    compatible = []
+    in_height_range = []
+    for name, series in PROP_SERIES.items():
+        if series["height_min"] <= support_height <= series["height_max"]:
+            position = get_nearest_position(series, support_height)
+            option = {
+                "prop": name,
+                "drawing": series["drawing"],
+                "position": position["position"],
+                "rated_height": position["height"],
+                "wll": position["wll"],
+                "margin": position["wll"] - demand,
+            }
+            in_height_range.append(option)
+            if option["margin"] >= 0:
+                compatible.append(option)
+
+    if compatible:
+        selected = sorted(compatible, key=lambda item: (item["rated_height"], item["wll"]))[0]
+        return {
+            "status": "PASS",
+            "status_color": PH_GREEN,
+            "message": "Selected support height has at least one compatible adjustable prop option.",
+            "support_height": support_height,
+            "reaction_demand": demand,
+            "selected": selected,
+            "compatible": compatible,
+        }
+
+    if in_height_range:
+        strongest = sorted(in_height_range, key=lambda item: item["wll"], reverse=True)[0]
+        return {
+            "status": "FAIL",
+            "status_color": PH_RED,
+            "message": "Support height is in range, but the reaction demand exceeds the available prop WLL at that height.",
+            "support_height": support_height,
+            "reaction_demand": demand,
+            "selected": strongest,
+            "compatible": [],
+        }
+
+    return {
+        "status": "OUT OF RANGE",
+        "status_color": PH_RED,
+        "message": "Support height is outside the embedded adjustable prop ranges.",
+        "support_height": support_height,
+        "reaction_demand": demand,
+        "selected": None,
+        "compatible": [],
+    }
 
 
 def build_summary(model, method, outboard, spec, workers, worker_mass, material_load, custom_load):
@@ -195,7 +388,7 @@ def make_platform_figure(model, method, outboard, summary, spec):
     return fig
 
 
-def create_project_payload(summary, spec):
+def create_project_payload(summary, spec, prop_check):
     return {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "platform": {
@@ -223,14 +416,21 @@ def create_project_payload(summary, spec):
             "deflection_outer_wheel_mm": spec["defl_wheel"],
             "deflection_free_end_mm": spec["defl_free"],
         },
+        "prop_height_check": {
+            "status": prop_check["status"],
+            "support_height_mm": prop_check["support_height"],
+            "reaction_demand_t": prop_check["reaction_demand"],
+            "selected_prop": prop_check["selected"],
+        },
     }
 
 
-def create_report_html(summary, spec, load_df, engineering_df):
+def create_report_html(summary, spec, load_df, engineering_df, prop_df):
     generated = datetime.now().strftime("%d %b %Y %H:%M")
     status_color = summary["status_color"]
     load_rows = "".join(f"<tr><td>{row.Item}</td><td>{row.Value}</td></tr>" for row in load_df.itertuples())
     engineering_rows = "".join(f"<tr><td>{row.Output}</td><td>{row.Value}</td></tr>" for row in engineering_df.itertuples())
+    prop_rows = "".join(f"<tr><td>{row.Item}</td><td>{row.Value}</td></tr>" for row in prop_df.itertuples())
     return f"""<!doctype html>
 <html>
 <head>
@@ -261,6 +461,8 @@ def create_report_html(summary, spec, load_df, engineering_df):
   <table><tr><th>Item</th><th>Value</th></tr>{load_rows}</table>
   <h3>Engineering Outputs</h3>
   <table><tr><th>Output</th><th>Value</th></tr>{engineering_rows}</table>
+  <h3>Prop Height Check</h3>
+  <table><tr><th>Item</th><th>Value</th></tr>{prop_rows}</table>
   <p class="small">This MVP report is generated from the current calculator inputs and the embedded reference table. Final temporary works decisions should be reviewed by a suitably qualified engineer.</p>
 </body>
 </html>"""
@@ -270,7 +472,7 @@ def escape_pdf_text(value):
     return str(value).replace("\\", "\\\\").replace("(", "\\(").replace(")", "\\)")
 
 
-def create_pdf_report_bytes(summary, spec, load_df, engineering_df):
+def create_pdf_report_bytes(summary, spec, load_df, engineering_df, prop_df):
     lines = [
         "PRESTON HIRE NZ",
         "SuperDeck Load Calculator Report",
@@ -285,6 +487,8 @@ def create_pdf_report_bytes(summary, spec, load_df, engineering_df):
     lines.extend(f"{row.Item}: {row.Value}" for row in load_df.itertuples())
     lines.extend(["", "Engineering Outputs"])
     lines.extend(f"{row.Output}: {row.Value}" for row in engineering_df.itertuples())
+    lines.extend(["", "Prop Height Check"])
+    lines.extend(f"{row.Item}: {row.Value}" for row in prop_df.itertuples())
     lines.extend(
         [
             "",
@@ -448,6 +652,19 @@ worker_mass = st.sidebar.number_input("Worker Allowance per Person (kg)", min_va
 material_load = st.sidebar.number_input("Material Load (kg)", min_value=0, max_value=10000, value=1000, step=50)
 custom_load = st.sidebar.number_input("Additional Load (kg)", min_value=0, max_value=10000, value=0, step=50)
 
+st.sidebar.header("Prop Height")
+if method == "Boltdown":
+    support_height = 0
+    st.sidebar.caption("Not applicable to boltdown configurations.")
+else:
+    support_height = st.sidebar.number_input(
+        "Support Height (mm)",
+        min_value=1800,
+        max_value=5300,
+        value=3000,
+        step=100,
+    )
+
 st.sidebar.markdown("---")
 st.sidebar.caption("Status thresholds: PASS < 80%, WARNING 80-100%, OVERLOADED > 100%.")
 
@@ -457,6 +674,7 @@ st.sidebar.caption("Status thresholds: PASS < 80%, WARNING 80-100%, OVERLOADED >
 # ==========================================================
 
 summary = build_summary(model, method, outboard, spec, workers, worker_mass, material_load, custom_load)
+prop_check = build_prop_check(method, spec, support_height)
 remaining_capacity = None if summary["swl"] is None else summary["swl"] - summary["total_load"]
 required_reduction = 0 if remaining_capacity is None else abs(min(remaining_capacity, 0))
 
@@ -483,6 +701,34 @@ engineering_df = pd.DataFrame(
             format_tonnes(spec["RC"]),
             format_mm(spec["defl_wheel"]),
             format_mm(spec["defl_free"]),
+        ],
+    }
+)
+
+selected_prop = prop_check["selected"] or {}
+prop_df = pd.DataFrame(
+    {
+        "Item": [
+            "Prop Check Status",
+            "Support Height",
+            "Reaction Demand",
+            "Selected Prop",
+            "Bolt Position",
+            "Rated Height",
+            "Prop WLL",
+            "Capacity Margin",
+            "Reference Drawing",
+        ],
+        "Value": [
+            prop_check["status"],
+            "N/A" if prop_check["support_height"] == 0 else f"{prop_check['support_height']} mm",
+            "N/A" if prop_check["reaction_demand"] is None else f"{prop_check['reaction_demand']:.1f} t",
+            selected_prop.get("prop", "N/A"),
+            selected_prop.get("position", "N/A"),
+            "N/A" if "rated_height" not in selected_prop else f"{selected_prop['rated_height']} mm",
+            "N/A" if "wll" not in selected_prop else f"{selected_prop['wll']:.1f} t",
+            "N/A" if "margin" not in selected_prop else f"{selected_prop['margin']:.1f} t",
+            selected_prop.get("drawing", "N/A"),
         ],
     }
 )
@@ -517,6 +763,18 @@ with m3:
 with m4:
     st.markdown(f"""<div class="metric-card"><div class="label">Free End Deflection</div><div class="value">{format_mm(spec['defl_free'])}</div></div>""", unsafe_allow_html=True)
 
+p1, p2, p3 = st.columns(3)
+with p1:
+    st.markdown(f"""<div class="metric-card"><div class="label">Prop Height Check</div><div class="value" style="color:{prop_check['status_color']};">{prop_check['status']}</div></div>""", unsafe_allow_html=True)
+with p2:
+    reaction_text = "N/A" if prop_check["reaction_demand"] is None else f"{prop_check['reaction_demand']:.1f} t"
+    st.markdown(f"""<div class="metric-card"><div class="label">Peak Positive Reaction</div><div class="value">{reaction_text}</div></div>""", unsafe_allow_html=True)
+with p3:
+    selected_text = "N/A"
+    if prop_check["selected"]:
+        selected_text = f"{prop_check['selected']['prop'].split()[0]} m"
+    st.markdown(f"""<div class="metric-card"><div class="label">Selected Prop</div><div class="value">{selected_text}</div></div>""", unsafe_allow_html=True)
+
 if summary["status"] == "DATA REQUIRED":
     st.info("This platform system is available, but the SWL, reaction, and deflection values still need to be entered before utilisation can be calculated.")
 elif summary["status"] == "OVERLOADED":
@@ -526,7 +784,16 @@ elif summary["status"] == "WARNING":
 else:
     st.success("The current load is below the planning threshold.")
 
-tab_dashboard, tab_visual, tab_export, tab_notes = st.tabs(["Dashboard", "Diagram", "Export", "Roadmap"])
+if prop_check["status"] == "FAIL":
+    st.error(prop_check["message"])
+elif prop_check["status"] == "OUT OF RANGE":
+    st.error(prop_check["message"])
+elif prop_check["status"] == "PASS":
+    st.success(prop_check["message"])
+else:
+    st.info(prop_check["message"])
+
+tab_dashboard, tab_visual, tab_prop, tab_export, tab_notes = st.tabs(["Dashboard", "Diagram", "Prop Check", "Export", "Roadmap"])
 
 with tab_dashboard:
     left, right = st.columns(2)
@@ -536,6 +803,9 @@ with tab_dashboard:
     with right:
         st.markdown('<h3 class="section-title">Engineering Outputs</h3>', unsafe_allow_html=True)
         st.dataframe(engineering_df, use_container_width=True, hide_index=True)
+
+    st.markdown('<h3 class="section-title">Prop Height Check</h3>', unsafe_allow_html=True)
+    st.dataframe(prop_df, use_container_width=True, hide_index=True)
 
     st.markdown('<h3 class="section-title">Platform Utilisation</h3>', unsafe_allow_html=True)
     if summary["swl"] is None:
@@ -575,16 +845,41 @@ with tab_visual:
     )
     st.dataframe(zones, use_container_width=True, hide_index=True)
 
+with tab_prop:
+    st.markdown('<h3 class="section-title">Adjustable Prop Selection</h3>', unsafe_allow_html=True)
+    st.write(prop_check["message"])
+    st.dataframe(prop_df, use_container_width=True, hide_index=True)
+
+    options_df = pd.DataFrame(
+        [
+            {
+                "Prop": option["prop"],
+                "Drawing": option["drawing"],
+                "Bolt Position": option["position"],
+                "Rated Height": f"{option['rated_height']} mm",
+                "WLL": f"{option['wll']:.1f} t",
+                "Margin": f"{option['margin']:.1f} t",
+            }
+            for option in prop_check["compatible"]
+        ]
+    )
+    if len(options_df) > 0:
+        st.markdown('<h3 class="section-title">Compatible Options</h3>', unsafe_allow_html=True)
+        st.dataframe(options_df, use_container_width=True, hide_index=True)
+    else:
+        st.info("No compatible prop option is available for the current height and reaction demand.")
+
 with tab_export:
     st.markdown('<h3 class="section-title">Save and Export</h3>', unsafe_allow_html=True)
-    payload = create_project_payload(summary, spec)
-    report_html = create_report_html(summary, spec, load_df, engineering_df)
-    report_pdf = create_pdf_report_bytes(summary, spec, load_df, engineering_df)
+    payload = create_project_payload(summary, spec, prop_check)
+    report_html = create_report_html(summary, spec, load_df, engineering_df, prop_df)
+    report_pdf = create_pdf_report_bytes(summary, spec, load_df, engineering_df, prop_df)
     csv_buffer = io.StringIO()
     pd.concat(
         [
             load_df.rename(columns={"Item": "Metric"}),
             engineering_df.rename(columns={"Output": "Metric"}),
+            prop_df.rename(columns={"Item": "Metric"}),
         ],
         ignore_index=True,
     ).to_csv(csv_buffer, index=False)

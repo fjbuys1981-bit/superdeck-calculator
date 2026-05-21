@@ -25,6 +25,7 @@ streamlit run app.py
 - Load summary and engineering output tables
 - Utilisation chart with 80% planning threshold
 - Indicative platform, prop, slab edge, and load-zone visual
+- Adjustable prop height/capacity check from the supplied prop drawings
 - Project JSON, calculation CSV, and HTML report download
 
 ## Engineering Note
